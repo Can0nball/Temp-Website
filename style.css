@@ -1,0 +1,53 @@
+* {
+    z-index: 10;
+}
+body {
+    align-content: center;
+    font-family: monospace;
+    background-repeat: no-repeat;
+    background-image: url(https://github.com/Can0nball/can0nball.github.io/blob/main/ow-shipinterior_orig.png?raw=true);
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    
+}
+button {
+    font-size: 22px;
+    border-radius: 13px;
+    font-family: monospace;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    text-underline-position: below;
+    padding: 10px 10px;
+}
+button:hover {
+    animation: button 0.3s ease-in;
+    animation-fill-mode: both;
+}
+@keyframes button {
+    from {
+        font-size: 22px;
+        padding: 10px 10px;
+    }
+    to {
+        font-size: 26px;
+        box-shadow: 3px 3px rgba(0,0,0,0.15);
+        padding: 11px 11px 11px 11px;
+    }
+}
+#bg-blur {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    z-index: 0;
+    position: fixed;
+}
+p {
+    position: relative;
+}
+img {
+    image-resolution
+}

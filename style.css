@@ -5,7 +5,7 @@ body {
     align-content: center;
     font-family: monospace;
     background-repeat: no-repeat;
-    background-image: url(https://github.com/Can0nball/can0nball.github.io/blob/main/Pictures/ow-shipinterior_orig.png?raw=true);
+    background-image: url(https://raw.githubusercontent.com/Can0nball/can0nball.github.io/main/Pictures/ow-shipinterior_orig.png);
     background-size: cover;
     margin: 0;
     position: relative;

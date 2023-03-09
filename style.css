@@ -1,18 +1,30 @@
 * {
     z-index: 10;
 }
+html { 
+    overflow: hidden;
+}
+/* For the text and misc things */
 body {
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: monospace;
     background-repeat: no-repeat;
     background-image: url(https://raw.githubusercontent.com/Can0nball/can0nball.github.io/main/Pictures/ow-shipinterior_orig.png);
-    background-size: cover;
-    margin: 0;
+    background-size: 103%;
+    margin:2px;
     position: relative;
     color: white;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
-    
+    width: 100vw;
+    height: 100vh;
 }
+p {
+    position: absolute;
+    top: 0px;
+}
+/* Button stuff */
 button {
     font-size: 22px;
     border-radius: 13px;
@@ -21,10 +33,13 @@ button {
     align-items: center;
     position: relative;
     text-underline-position: below;
-    padding: 10px 10px;
+    margin: 10px;
+    position = fixed;
+    width: 150px;
+    height: 50px;
 }
 button:hover {
-    animation: button 0.3s ease-in;
+    animation: button 0.7s forwards ease-out;
     animation-fill-mode: both;
 }
 @keyframes button {
@@ -35,16 +50,33 @@ button:hover {
     to {
         font-size: 26px;
         box-shadow: 3px 3px rgba(0,0,0,0.15);
-        padding: 11px 11px 11px 11px;
+        margin: 0px;
+        width: 160px;
+        height: 60px;
     }
 }
+/* What happens to all the other buttons except for the one you hover over */
+#butler:has(button:hover)
+button:not(button:hover) {
+    animation: antibutton 0.7s forwards;
+}
+@keyframes antibutton {
+    from {
+    }
+    to {
+        font-size: 18px;
+        color: rgba(108, 122, 137);
+        background-color: rgba(218, 223, 225);
+        width:120px;
+        height: 40px;
+        border-radius: 20px;
+    }
+}
+/* background blur */
 #bg-blur {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
     z-index: 0;
     position: fixed;
-}
-p {
-    position: relative;
 }

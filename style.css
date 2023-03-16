@@ -13,34 +13,44 @@ body {
     background-repeat: no-repeat;
     background-image: url(https://raw.githubusercontent.com/Can0nball/can0nball.github.io/main/Pictures/ow-shipinterior_orig.png);
     background-size: 103%;
-    margin:2px;
+    margin:0px;
     position: relative;
     color: white;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
     width: 100vw;
     height: 100vh;
+    
 }
 p {
+    font-size: 22px;
     position: absolute;
-    top: 0px;
+    top: 240px;
+}
+h1 {
+    position: absolute;
+    top: 350px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    justify-content: center;
 }
 /* Button stuff */
 button {
-    font-size: 22px;
-    border-radius: 13px;
-    font-family: monospace;
-    background-color: white;
-    align-items: center;
-    position: relative;
-    text-underline-position: below;
-    margin: 10px;
-    position = fixed;
-    width: 150px;
+    font-size:22px;
+    border-radius:13px;
+    font-family:monospace;
+    background-color:white;
+    align-items:center;
+    position:relative;
+    text-underline-position:below;
+    margin:10px;
+    width:150px;
     height: 50px;
 }
+
 button:hover {
     animation: button 0.7s forwards ease-out;
     animation-fill-mode: both;
+    cursor: pointer;
 }
 @keyframes button {
     from {
@@ -49,20 +59,18 @@ button:hover {
     }
     to {
         font-size: 26px;
-        box-shadow: 3px 3px rgba(0,0,0,0.15);
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
         margin: 0px;
         width: 160px;
         height: 60px;
     }
 }
-/* What happens to all the other buttons except for the one you hover over */
+/* What happens to all the other buttons except for the one hovered over */
 #butler:has(button:hover)
 button:not(button:hover) {
     animation: antibutton 0.7s forwards;
 }
 @keyframes antibutton {
-    from {
-    }
     to {
         font-size: 18px;
         color: rgba(108, 122, 137);
@@ -79,4 +87,16 @@ button:not(button:hover) {
     backdrop-filter: blur(5px);
     z-index: 0;
     position: fixed;
+}
+style {
+    width:100px;
+    height:100px;
+}
+iframe {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    rotate: 90;
+    transition: left 1s;
+    animation: spotify 1s;
 }
